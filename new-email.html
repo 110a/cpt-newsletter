@@ -8,14 +8,31 @@
   <head>
     <title>Orbi Group | Building & Development</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+
+    
     <!--[if mso
       ]><xml
         ><o:OfficeDocumentSettings
           ><o:PixelsPerInch>96</o:PixelsPerInch
           ><o:AllowPNG /></o:OfficeDocumentSettings></xml
     ><![endif]-->
+    <!--[if mso]>
+<style type="text/css">
+    h1, h2, h3, h4, h5, h6, p, a, span, td, em, strong {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+</style>
+<![endif]-->
     <style>
+      @media (prefers-color-scheme: dark) {
+  /* Dark mode styles */
+  .white {
+    color: #ffffff!Important;
+  }
+}
       * {
         box-sizing: border-box;
       }
@@ -73,8 +90,7 @@
       #memu-r0c0m2:checked ~ .menu-links span {
         color: #171719 !important;
       }
-
-      @media (max-width: 700px) {
+        @media only screen and (max-width: 700px) {
         .desktop_hide table.icons-outer {
           display: inline-table !important;
         }
@@ -92,8 +108,10 @@
           margin: 0 auto;
         }
 
-        .image_block div.fullWidth {
+        div.fullWidth, .fullWidth img, .fullWidth {
           max-width: 100% !important;
+          min-width: 100% !important;
+          width: 100% !important;
         }
 
         .menu-checkbox[type="checkbox"] ~ .menu-links {
@@ -131,8 +149,10 @@
           width: 100% !important;
         }
 
-        .stack .column {
-          width: 100%;
+        .stack .column, .column {
+          width: 100%important;
+          max-width: 100%!important;
+          min-width: 100%!important;
           display: block;
         }
 
@@ -165,14 +185,14 @@
         }
 
         .row-2 .column-1 .block-4.paragraph_block td.pad,
+        .row-4 .column-1, .row-4 .column-2,
         .row-5 .column-1,
         .row-5 .column-2,
         .row-8 .column-1 .block-2.heading_block td.pad {
           padding: 10px 20px !important;
         }
 
-        .row-10 .column-1,
-        .row-4 .column-2  {
+        .row-10 .column-1 {
           padding: 10px 20px 10px 10px!important;
         }
 
@@ -439,11 +459,12 @@
                         <tr>
                           <td
                           background="https://cpt.ge/orbi-newsletter/images/orbi-continental-main.jpg"
-                          bgcolor="#0c1c33"
+                          bgcolor="#ffffff"
                           style="
                           background-repeat: no-repeat;
                           background-size: cover;
                           background-position: center;
+                          background-color: #ffffff;
                           
                         "
                             class="column column-1"
@@ -507,8 +528,8 @@
                                     "
                                   >
                                     <span
-                                      class="tinyMce-placeholder"
-                                      style="word-break: break-word"
+                                      class="tinyMce-placeholder .white"
+                                      style="word-break: break-word;color: #ffffff;"
                                       >Новые проекты от крупнейшего застройщика
                                       Грузии и ведущего девелопера в Европе –
                                       <br />
@@ -590,7 +611,7 @@
                                     "
                                   >
                                     <span
-                                      class="tinyMce-placeholder"
+                                      class="tinyMce-placeholder .white"
                                       style="word-break: break-word"
                                       >Мы являемся лидером рынка инвестиционной
                                       недвижимости Грузии, предлагая нашим
@@ -998,7 +1019,7 @@
                               border-bottom: 0px;
                               border-left: 0px;
                             "
-                            width="50%"
+                          width="50%"
                           >
                             <!-- img orbi continental -->
                             <table
@@ -1162,7 +1183,7 @@
                               border-bottom: 0px;
                               border-left: 0px;
                             "
-                            width="50%"
+                            
                           >
                             <!-- img Central Park Towers -->
                             <table
